@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color:#121212;
+
+}
+
+#potencia, #modelos, #sobre{
+    background-color:#1A1A29;
+}
+
+.mobile-menu-bar{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+
+
+section{
+    border-top: 1px solid white;
+}
+
+
+header{
+    background-image: url('imagens/fundo.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navegation{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 18px 40px;
+    
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navegation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.3rem;
+}
+
+.navegation ul li a:hover{
+    text-decoration: underline;
+}
+
+nav .btn-reserve{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 10px 50px;
+    border-radius: 30px;
+    margin-right: -8%;
+}
+
+nav .btn-reserve:hover{
+   color: #EB1535;
+   background-color: black;
+}
+
+h2{
+   text-align: center;
+    border-top: 1px solid white;
+    color: white;
+    font-weight: 500;
+    padding: 1.5em;
+    font-size: 2rem;    
+}
+
+.informations{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.descricao{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+}
+
+.descricao .descricao-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+    border: 5px solid white;
+}
+
+#descricao-1 {
+    background-image: url('imagens/velocimetro.jpg');
+  }
+
+  #descricao-2 {
+    background-image: url('imagens/dentro.jpg');
+  }
+
+  #descricao-3 {
+    background-image: url('imagens/tanque-combustivel.jpg');
+  }
+
+  #descricao-4 {
+    background-image: url('imagens/family.jfif');
+  }
+
+  #descricao-5 {
+    background-image: url('imagens/velomax.jpg');
+  }
+
+  #descricao-6 {
+    background-image: url('imagens/peso.jpg');
+  }
+
+  #descricao-7 {
+    background-image: url('imagens/potencia.jpg');
+  }
+
+  #descricao-8 {
+    background-image: url('imagens/modelo1.png');
+  }
+
+  #descricao-9 {
+    background-image: url('imagens/modelo2.jpeg');
+  }
+
+  #descricao-10 {
+    background-image: url('imagens/modelo3.jpg');
+  }
+
+  .btn-modelos{
+   text-align: center;
+   font-weight: bold;
+   float: right;
+   color: white;
+   border-radius: 30px;
+   padding: 10px 70px;
+   border: 2px solid white;
+   margin-top: -70px;
+   margin-right: 10px;
+  }
+
+  .btn-modelos:hover{
+    background-color: #120E0B;
+    color: white; 
+   }
+
+  p{
+    font-size: 1.2rem;
+  }
+
+  footer{
+	clear: both;
+	padding: 50px 0 30px 0;
+	color: #fff;
+	background: #121212;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	width: 100%;
+  border-top: 1px solid white;
+}
+
+.p-rodape{
+    margin-top: -20px;
+    margin-left: 5rem;
+    font-size: 1rem;
+    float: left; 
+}
+
+footer a{
+	padding: 2px 10px;	
+}
+
+.btn-redes{
+    padding: 10px 15px; 
+    color:black;
+    border: 1px solid white;
+    float: right;
+    margin-right: 50px;
+    margin-top: -20px; 
+}
+
+.btn-redes:hover{
+    color:white;
+    background-color: #120E0B; 
+}
+/* MOBILE VERSION */
+@media (max-width:785px){
+
+  header{
+    background-image: url('imagens/fundo-mobile.jpg'); 
+}
+
+.nav-menu{
+  padding: 1.5rem 4rem;  
+}
+
+.nav-item{
+  display: none;
+}
+
+.btn-reserve{
+  display: none;
+}
+
+.mobile-menu-bar{
+  display: block;
+  
+}
+
+.mobile-menu-bar button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item{
+  display: block;
+  padding-top: 1.2rem;
+  margin-right: 25px;
+}
+
+.mobile-menu .btn-reserve{
+  text-align: center;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 30px;
+  display: block;
+  width: 20%;
+  margin-left: 84%;
+  margin-top: -25px;
+
+}
+
+.mobile-menu a:hover{
+  color: #E3E215;
+}
+
+.mobile-menu  .btn-reserve:hover{
+  background-color: #01031A;
+  text-decoration: none;
+}
+
+.open{
+  display: block;
+}
+
+.navegation{
+  padding: 15px 20px;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+  .informations {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+
+  .informations p{
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+  }
+
+  .btn-modelos{
+   display: none;
+  }
+
+  footer{
+    clear: both;
+    padding: 50px 0 30px 0;
+    display: flex;
+    align-items: start;
+    color: #fff;
+    background: #121212;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    width: 100%;
+    border-top: 1px solid white; 
+  }
+
+  .p-rodape{
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1rem;   
+}
+
+footer a{
+	padding: 30px 10px;	
+}
+
+}
