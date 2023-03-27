@@ -216,11 +216,17 @@ footer a{
     color:white;
     background-color: #120E0B; 
 }
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+
 /* MOBILE VERSION */
 @media (max-width:785px){
 
   header{
-    background-image: url('imagens/fundo-mobile.jpg'); 
+    background: #121212; 
 }
 
 .nav-menu{
@@ -266,8 +272,8 @@ footer a{
   padding: 10px 10px;
   border-radius: 30px;
   display: block;
-  width: 20%;
-  margin-left: 84%;
+  width: 40%;
+  margin-left: 65%;
   margin-top: -25px;
 
 }
@@ -312,26 +318,29 @@ footer a{
 
   footer{
     clear: both;
-    padding: 50px 0 30px 0;
+    padding: 50px 0 50px 0;
     display: flex;
-    align-items: start;
+    align-items:start;
     color: #fff;
     background: #121212;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
     border-top: 1px solid white; 
   }
 
   .p-rodape{
     display: flex;
-    margin-left: 2rem;
-    font-size: 1rem;   
+    padding-bottom: 15px;
+    font-size: 0.80rem;   
 }
 
 footer a{
-	padding: 30px 10px;	
+	padding: 25px 17px;	
+  margin-left: -29px;
 }
+
+
 
 }
